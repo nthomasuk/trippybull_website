@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    background: none;
+    border: none;
+    color: inherit;
+}
+
+body {
+    position: relative;
+    background-color: #000;
+    min-height: 100vh;
+    padding-bottom: 4em;
+}
+
+.round-image {
+    border-radius: 0.8em;
+    width: 100%;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    padding: 1em;
+    background-color: hsl(34, 100%, 75%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 5px black;
+    z-index: 1;
+
+}
+
+.menu > a {
+    padding: 1em 2em;
+    font-weight: bold;
+    font-size: larger;
+    color: black;
+    border-radius: 0.5em;
+    text-decoration: none;
+}
+
+.menu > a:hover {
+    color: hsl(240, 82%, 57%);
+}
+
+.brand {
+    font-weight: bold;
+    font-size:x-large;
+    width: fit-content;
+    padding: 0.5em 1em;
+    color: hsl(240, 82%, 57%);
+    border-radius: 0.1em;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 93px;
+}
+
+.image_header {
+    font-size: 10em;
+    align-content: space-around;
+    
+}
+
+.main_image {
+    background-color: hsl(34, 100%, 75%);
+    color: black;
+    display: flex;
+    width: calc(100% - 4em);
+    width: 100%;
+    height: 825px;
+    overflow: hidden;
+}
+
+.main_image img {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    animation: scale-in-out 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scale-in-out {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.card {
+    background-color: hsl(34, 100%, 75%);
+    color: black;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 0.25em black;
+    display: flex;
+    width: calc(100% - 4em);
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.card-aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    align-items: center;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1em;
+    padding-left: 2em;
+}
+
+.card-body h2 {
+    margin: 0;
+    font-size: 6em;
+}
+
+.card-body p {
+    margin: 0.5em 0;
+    font-size: 2.5em;
+}
+
+.row_cards {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.ctacard {
+    background-color: hsl(34, 100%, 75%);
+    color: black;
+    margin: 2em;
+    padding: 4em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 0.25em black;
+    display: flex;
+    width: calc(100% - 4em);
+    flex-wrap: wrap;
+}
+
+.row_card_body p {
+    font-size: 1.25em;
+    font-weight: bold;
+    align-content: flex-end;
+}
+
+.ctacard-header {
+    font-size: 6em;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.ctacard-header:hover {
+    color: hsl(240, 82%, 57%);
+}
+
+.page_header_card {
+    background-color: hsl(34, 100%, 75%);
+    display: flex;
+    flex-direction: row;
+    color: black;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 0.25em black;
+    width: calc(90% - 2em);
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.page_header_card h2 {
+    font-weight:bolder;
+    font-size: 6em;
+    text-align: center;
+}
+
+.page_header_card p {
+    font-weight: lighter;
+    font-size: 2em;
+    text-align: center;
+}
+
+.collection_card-aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    align-items: center;
+}
+
+.collections_card-aside {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.collections_card-aside-row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.collections_card-aside-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.collections_card-aside-row p,
+.collections_card-aside-row div {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.collections_card-aside-row-images {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.collections_card-aside-row-images img {
+    width: 200px;
+    height: auto;
+}
+
+.collections_card_container {
+    background-color: hsl(34, 100%, 75%);
+    color: black;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 0.25em black;
+    display: flex;
+    width: calc(100% - 4em);
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.collections_card {
+    background-color: hsl(208, 100%, 97%, 0.6);
+    color: black;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 0.25em black;
+    display: flex;
+    width: calc(100% - 4em);
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.coming_soon_image {
+    border-radius: 0.8em;
+    width: 100%;
+    width: 450px;
+    height: auto;
+    padding-top: 2em;
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding: 1em;
+    background-color: hsl(34, 100%, 75%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px -4px 5px 0px black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#torum_referral,
+#main_artist,
+#website_dev {
+    text-decoration: none;
+}
+
